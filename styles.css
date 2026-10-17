@@ -59,9 +59,19 @@ h1 em { color: var(--rose); font-weight: 400; font-style: normal; }
 h2 { margin-bottom: 1.1rem; font-size: clamp(2.3rem, 4.1vw, 4.1rem); line-height: 1.08; }
 .story-copy p:not(.eyebrow):not(.signature) { max-width: 58ch; color: var(--muted); font-size: .96rem; line-height: 1.85; }
 .signature { margin: 2rem 0 0; color: var(--rose-dark); font-family: var(--serif); font-size: 1.6rem; font-style: italic; }
-.journey-photo { padding: 0 clamp(1.2rem, 10vw, 10rem) 6rem; background: #efe2de; }
-.journey-photo img { display: block; width: 100%; max-height: 440px; object-fit: cover; object-position: center 42%; }
-.journey-photo p { margin: .75rem 0 0; color: var(--muted); font-family: var(--serif); font-size: .9rem; }
+.journey-gallery { background: #efe2de; }
+.journey-heading { max-width: 700px; margin: 0 auto 3rem; text-align: center; }
+.journey-heading h2 { margin-bottom: 0; }
+.journey-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 3rem 2rem; align-items: start; }
+.journey-item { min-width: 0; margin: 0; }
+.journey-item img { display: block; width: 100%; height: clamp(250px, 30vw, 430px); object-fit: cover; background: var(--paper-deep); }
+.journey-judge img { object-position: center 32%; }
+.journey-award img { height: clamp(240px, 24vw, 350px); object-position: center; }
+.journey-clinic img { height: clamp(240px, 24vw, 350px); }
+.journey-branch img { object-position: center 42%; }
+.journey-item figcaption { display: grid; gap: .3rem; padding-top: .8rem; }
+.journey-item figcaption strong { font-family: var(--serif); font-size: 1.08rem; font-weight: 500; }
+.journey-item figcaption span { color: var(--muted); font-size: .76rem; line-height: 1.5; }
 .workshop { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem 8vw; }
 .workshop-heading { max-width: 490px; }
 .workshop-heading > p:last-child { max-width: 42ch; color: var(--muted); font-size: .94rem; line-height: 1.75; }
@@ -109,8 +119,9 @@ h2 { margin-bottom: 1.1rem; font-size: clamp(2.3rem, 4.1vw, 4.1rem); line-height
   .section-pad { padding: 4.5rem 1.25rem; }
   .story { grid-template-columns: 1fr; gap: 2.5rem; }
   .story-image-wrap { width: calc(100% - 12px); height: 105vw; max-height: 460px; }
-  .journey-photo { padding: 0 1.25rem 4rem; }
-  .journey-photo img { aspect-ratio: 1.15; }
+  .journey-heading { margin-bottom: 2rem; text-align: left; }
+  .journey-grid { grid-template-columns: 1fr; gap: 2.2rem; }
+  .journey-item img, .journey-award img, .journey-clinic img { height: min(90vw, 430px); }
   .workshop { grid-template-columns: 1fr; gap: 2rem; }
   .workshop-detail-note { grid-column: 1; margin: -.7rem 0 0 60px; }
   .request { grid-template-columns: 1fr; gap: 2rem; }
