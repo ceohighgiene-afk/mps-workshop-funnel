@@ -59,9 +59,15 @@ h1 em { color: var(--rose); font-weight: 400; font-style: normal; }
 h2 { margin-bottom: 1.1rem; font-size: clamp(2.3rem, 4.1vw, 4.1rem); line-height: 1.08; }
 .story-copy p:not(.eyebrow):not(.signature) { max-width: 58ch; color: var(--muted); font-size: .96rem; line-height: 1.85; }
 .signature { margin: 2rem 0 0; color: var(--rose-dark); font-family: var(--serif); font-size: 1.6rem; font-style: italic; }
+.journey-photo { padding: 0 clamp(1.2rem, 10vw, 10rem) 6rem; background: #efe2de; }
+.journey-photo img { display: block; width: 100%; max-height: 440px; object-fit: cover; object-position: center 42%; }
+.journey-photo p { margin: .75rem 0 0; color: var(--muted); font-family: var(--serif); font-size: .9rem; }
 .workshop { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem 8vw; }
 .workshop-heading { max-width: 490px; }
 .workshop-heading > p:last-child { max-width: 42ch; color: var(--muted); font-size: .94rem; line-height: 1.75; }
+.academy-photo { align-self: center; margin: 0; }
+.academy-photo img { display: block; width: 100%; aspect-ratio: 1.35; object-fit: cover; }
+.academy-photo figcaption { margin-top: .65rem; color: var(--muted); font-family: var(--serif); font-size: .86rem; }
 .learning-list { border-top: 1px solid var(--line); }
 .learning-item { display: grid; grid-template-columns: 45px 1fr; gap: 1rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
 .item-mark { padding-top: .15rem; color: var(--rose); font-family: var(--serif); font-size: 1.25rem; }
@@ -103,6 +109,8 @@ h2 { margin-bottom: 1.1rem; font-size: clamp(2.3rem, 4.1vw, 4.1rem); line-height
   .section-pad { padding: 4.5rem 1.25rem; }
   .story { grid-template-columns: 1fr; gap: 2.5rem; }
   .story-image-wrap { width: calc(100% - 12px); height: 105vw; max-height: 460px; }
+  .journey-photo { padding: 0 1.25rem 4rem; }
+  .journey-photo img { aspect-ratio: 1.15; }
   .workshop { grid-template-columns: 1fr; gap: 2rem; }
   .workshop-detail-note { grid-column: 1; margin: -.7rem 0 0 60px; }
   .request { grid-template-columns: 1fr; gap: 2rem; }
